@@ -4,8 +4,8 @@ function getComputerChoice() {
 
     // 1. Generate random number in the range 0 to 1
     // 2. Change generated number so it is only equal to 1, 2 or 3
-    // 3. Assign number 1, 2 and 3 to Rock, Paper & Scissors respectively
-    // 4. Write a string with computer's choice in the getComputerChoice variable
+    // 3. Assign number 1, 2 and 3 to Rock, Paper & Scissors string respectively
+    // 4. Write a string with computer's choice in the getComputerSelection variable
 
     const getRandomNumber = Math.floor(Math.random() * 3) + 1;
     switch (getRandomNumber) {
@@ -27,9 +27,9 @@ function getComputerChoice() {
 function getHumanChoice() {
 
     // 1. Ask user to input his choice - use prompt function
-    // 2. Write user input into the variable getPrompt
+    // 2. Write user input into the variable getHumanSelection
     // 3. Fix formatting of the obtained string variable (first letter capitalized, rest of the letters lower case)
-    // 4. Write final user input into getHumanChoice variable
+    // 4. Return final user input into getHumanSelection variable
 
     const getHumanSelection = prompt("Type in your choice: Rock, Paper or Scissors:");
     return getHumanSelection.charAt(0).toUpperCase() + getHumanSelection.slice(1).toLowerCase();
@@ -62,58 +62,6 @@ function playGame() {
         }
     };
 
-    // // Round 1
-
-    // let humanSelection = getHumanChoice();
-    // let computerSelection = getComputerChoice();
-
-    // console.log(`Human Choice - Round 1: ${humanSelection}`);
-    // console.log(`Computer Choice - Round 1: ${computerSelection}`);
-
-    // playRound(humanSelection, computerSelection);
-
-
-    // // Round 2
-
-    // humanSelection = getHumanChoice();
-    // computerSelection = getComputerChoice();
-
-    // console.log(`Human Choice - Round 2: ${humanSelection}`);
-    // console.log(`Computer Choice - Round 2: ${computerSelection}`);
-
-    // playRound(humanSelection, computerSelection);
-
-
-    // // Round 3
-
-    // humanSelection = getHumanChoice();
-    // computerSelection = getComputerChoice();
-
-    // console.log(`Human Choice - Round 3: ${humanSelection}`);
-    // console.log(`Computer Choice - Round 3: ${computerSelection}`);
-
-    // playRound(humanSelection, computerSelection);
-
-    // // Round 4
-
-    // humanSelection = getHumanChoice();
-    // computerSelection = getComputerChoice();
-
-    // console.log(`Human Choice - Round 4: ${humanSelection}`);
-    // console.log(`Computer Choice - Round 4: ${computerSelection}`);
-
-    // playRound(humanSelection, computerSelection);
-
-    // // Round 5
-
-    // humanSelection = getHumanChoice();
-    // computerSelection = getComputerChoice();
-
-    // console.log(`Human Choice - Round 5: ${humanSelection}`);
-    // console.log(`Computer Choice - Round 5: ${computerSelection}`);
-
-    // playRound(humanSelection, computerSelection);
-
     const humanSelection = [];
     const computerSelection = [];
 
@@ -132,7 +80,6 @@ function playGame() {
     // Final Score
 
     console.log('Results of the game:')
-
     console.log(`Human Score: ${humanScore}`);
     console.log(`Computer Score: ${computerScore}`);
 
@@ -140,3 +87,4 @@ function playGame() {
 
 alert(`Let's play the game. Prepare for 5 rounds of Rock, Paper, Scissors match :)`)
 playGame();
+alert(`Game completed. I hope you enjoyed!`)
