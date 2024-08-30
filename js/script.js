@@ -1,4 +1,4 @@
-// definition of function getComputerChoice
+// Definition of function getComputerChoice
 
 function getComputerChoice() {
 
@@ -22,7 +22,7 @@ function getComputerChoice() {
     return getComputerSelection;
 };
 
-// definition of function getHumanChoice
+// Definition of function getHumanChoice
 
 function getHumanChoice() {
 
